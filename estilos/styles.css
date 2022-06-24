@@ -1,0 +1,219 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* HEADER */
+header{
+    background-color: black; 
+    width: 100%;
+    padding-top: 50px;
+    position: fixed;
+
+}
+/* HEADER LOGO */
+.header__logo{
+    width: 100%;
+    margin: auto; 
+    margin-bottom: 60px;
+
+}
+
+/* HEADER MENÚ */
+.header__menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 80px;
+    
+
+
+}
+.header__menu li {
+    display: inline-block;
+    width: 270px;
+    height: 30px;
+    margin-bottom: 16px;
+    background-color: #000000;
+    
+}
+.header__menu ul li a{
+
+    font-family: 'Roboto', sans-serif;
+
+    font-style: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+/* .header__menu ul li a:hover{
+    color:#f2f2f2;
+    background: #6e6e6e;
+    border-bottom: 10px;
+    border-color: #FFFFFF;
+} */
+/* FONDO y GRID */
+body{
+    background: linear-gradient(180deg, #000814 0%, rgba(0, 8, 20, 0) 100%);
+    /* width: 100%; */
+    text-align: center;
+}
+.contenedor {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto 8fr 1fr; 
+ 
+    grid-template-areas: 
+      "header header header"
+      "portada portada portada"
+      "main main main"
+      "footer footer footer"; 
+  }
+  .header { grid-area: header; }
+  .nav__portadas { grid-area: portada;
+    /* display:flex;
+    flex-wrap: wrap; */
+    /* width: 100%; } */
+    margin-top: 230px;
+  }
+  .main { grid-area: main; }
+  .footer { grid-area: footer; }
+/* NAV PORTADAS */
+.nav__portadas img{
+    display: inline-block;
+    /* margin: 0%; */
+    /* height: 100%; */
+    max-width: 100%;
+    
+}
+/* MAIN */
+
+.main__titulo, h2{
+    font-family: 'Roboto', sans-serif;
+    margin: 5vw;
+    /* margin-left: 20px;
+    padding: 50px; */
+    color: #FFFFFF;
+    font-size: 2em;
+    max-width: 1em;
+    text-align: left;
+    /* padding-left: 150px; */
+
+}
+h3, p{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+
+.main__peliculas{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px; 
+
+
+}
+
+.main__peliculas img{
+
+    margin: 70px;
+    height: 430px;
+    width: 280px;
+}
+
+/* PROXIMOS ESTRENOS */
+.proximos__estrenos{
+    margin:  auto 200px ;
+}
+.proximos__estrenos img{
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-bottom: 700px;
+}
+/* NUESTROS CINES */
+.textos{
+    font-size: 23px;
+}
+iframe{
+    margin-bottom: 50px;
+}
+/* CONTACTOS */
+.contactanos__h2{
+    text-align: center;
+}
+label{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    font-size: 30px;
+    color: #FFFFFF;
+    display: inline-block;
+    position: relative;
+    left: 500px; 
+
+}
+form input, form textarea{
+    display: block;    
+    } 
+input, textarea{
+    text-align: center;
+
+}
+input{
+    width: 500px;
+    height: 40px;
+}
+textarea{
+    width: 600px;
+    height: 300px;
+    font-size: 16px;
+    line-height: 250px ;
+}
+.boton{
+    display: inline-block;
+    width: 240px;
+    height: 52px;    
+    margin-bottom: 152px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    font-size: 30px;
+    color: #000000;
+    background: #9DFF20;
+    border-radius: 50px;
+    border: 0;
+
+}
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redes{
+
+    margin-bottom: 60px;
+}
+
+.redes{
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo__footer{
+    
+    margin-top: 30px;
+}
+
+
