@@ -44,17 +44,24 @@ header{
     font-style: normal;
     color: #FFFFFF;
     margin: 30px;
-
+ 
     
     
 }
 
-/* .header__menu ul li a:hover{
-    color:#f2f2f2;
-    background: #6e6e6e;
-    border-bottom: 10px;
-    border-color: #FFFFFF;
-} */
+.header__menu a:hover {
+ 
+  
+  border-bottom: solid 5px  #9DFF20;
+  padding-bottom: 25px;
+  margin-bottom: auto;
+  border-color: #9DFF20;
+ 
+    
+    
+}
+
+
 /* FONDO y GRID */
 body{
     background: linear-gradient(180deg, #000814 0%, rgba(0, 8, 20, 0) 100%);
@@ -75,6 +82,7 @@ body{
   .main { grid-area: main; }
   .footer { grid-area: footer; }
 /* NAV PORTADAS */
+
 .nav__portadas img{
     display: inline-block;
 
@@ -111,9 +119,13 @@ h3, p{
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px; 
-
-
 }
+
+.main__peliculas img:hover{
+  transform: translate(10px,10px);
+}
+
+
 
 .main__peliculas img{
 
