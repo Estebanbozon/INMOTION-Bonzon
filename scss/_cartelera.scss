@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(180deg, #000814 0%, rgba(0, 8, 20, 0) 100%);
+    text-align: center; }
+main{
+    .cartelera__titulo{
+        font-family: 'Roboto', sans-serif;
+        margin: 5vw;
+        color: #FFFFFF;
+        font-size: 2em;
+        max-width: none;
+        text-align: left;
+    }
+    .cartelera__peliculas{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 100px;
+        text-align: center;
+    
+    }
+    
+    
+    .cartelera__peliculas img{
+        /* display: inline-block; */
+        margin: 10px 70px;
+        height: auto;
+        width: 280px;
+    }
+}  

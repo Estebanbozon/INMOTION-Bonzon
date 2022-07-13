@@ -1,0 +1,63 @@
+body{
+    background: linear-gradient(180deg, #000814 0%, rgba(0, 8, 20, 0) 100%);
+    /* width: 100%; */
+    text-align: center;
+}
+
+.grid__nuestros__cines {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "textos__nuestros__cines iframe"
+      "textos__nuestros__cines2 iframe2"; 
+  }
+  .textos__nuestros__cines { grid-area: textos__nuestros__cines;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .textos__nuestros__cines2 { grid-area: textos__nuestros__cines2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .iframe { grid-area: iframe; }
+  .iframe2 { grid-area: iframe2; }
+    .h3__proximos__estrenos{
+        margin-bottom: 25px;
+        font-size: 30px;
+        font-style: bold;
+    }
+
+
+.textos{
+    font-size: 23px;
+}
+main{
+iframe{
+    margin-bottom: 50px;
+}
+h2{
+font-family: 'Roboto', sans-serif;
+margin: 5vw;
+/* margin-left: 20px;
+padding: 50px; */
+color: #FFFFFF;
+font-size: 2em;
+max-width: none;
+text-align: left;
+/* padding-left: 150px; */
+
+}
+
+h3, p{
+font-family: 'Roboto', sans-serif;
+margin-left: 20px;
+color: #FFFFFF;
+}
+}
