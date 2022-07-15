@@ -114,21 +114,6 @@ body {
   background: linear-gradient(180deg, #000814 0%, rgba(0, 8, 20, 0) 100%);
   text-align: center; }
 
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 5fr auto;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
-
-.header {
-  grid-area: header; }
-
-.main {
-  grid-area: main; }
-
-.footer {
-  grid-area: footer; }
-
 header {
   width: 100%;
   padding-top: 50px; }
@@ -136,69 +121,126 @@ header {
     padding-bottom: 50px;
     align-items: center; }
 
-nav .header_boostrap {
+.header_boostrap {
   justify-content: center;
   align-items: center;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   margin-bottom: 5px; }
+  .header_boostrap li {
+    margin-left: 25px;
+    margin-right: 25px; }
+    .header_boostrap li :hover {
+      text-decoration: underline solid 3px  #9DFF20;
+      color: #9DFF20; }
 
-nav .header_boostrap li {
-  margin-left: 25px;
-  margin-right: 25px; }
-
-nav .header_boostrap li:hover {
-  text-decoration: underline solid 3px  #9DFF20;
-  color: #9DFF20; }
-
-main .main__titulo {
+.main .main__titulo {
   font-family: 'Roboto', sans-serif;
-  margin: 5vw;
+  margin: 50px;
   color: #FFFFFF;
-  font-size: 2em;
-  max-width: none;
-  text-align: left; }
+  font-size: 50px;
+  margin-right: 30px; }
 
-main .main__peliculas {
+.main .main__peliculas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   margin: 20px; }
-
-main img {
-  margin: 10px 70px;
-  height: 430px;
-  width: 280px; }
-
-main img:hover {
-  transform: translate(10px, 10px); }
-
-main figure {
-  display: inline-block;
-  padding-bottom: 0px; }
-  main figure figcaption {
-    color: #fff;
-    padding: 3px;
-    text-align: center; }
+  .main .main__peliculas figure {
+    display: inline-block;
+    padding-bottom: 0px; }
+    .main .main__peliculas figure img {
+      margin: 10px 70px;
+      height: auto;
+      width: 300px; }
+      .main .main__peliculas figure img :hover {
+        transform: translate(10px, 10px); }
+    .main .main__peliculas figure figcaption {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 3px;
+      text-align: center; }
 
 .footer {
-  background-color: black;
+  background-color: #000814;
   display: inline-block;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px; }
+  padding: 10px; }
   .footer .redes {
     display: flex;
-    margin: 50px;
+    margin: 20px;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    padding: 20px;
-    margin-bottom: 60px; }
-  .footer .logo__footer {
-    margin-top: 30px; }
+    padding: 10px;
+    margin-bottom: 10px; }
+
+body {
+  background: linear-gradient(180deg, #000814 0%, rgba(0, 8, 20, 0) 100%);
+  text-align: center; }
+
+.main__pelis {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "parte1 parte2" "parte1 parte2"; }
+  .main__pelis .parte1 {
+    grid-area: parte1; }
+    .main__pelis .parte1 h1 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 75px;
+      line-height: 88px;
+      color: #FFFFFF;
+      margin-top: 100px;
+      margin-bottom: 130px;
+      margin-left: 120px; }
+    .main__pelis .parte1 p {
+      font-family: 'Puritan', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 27px;
+      text-align: left;
+      margin-left: 145px; }
+    .main__pelis .parte1 button {
+      width: 240px;
+      height: 52px;
+      font-family: 'Roboto', sans-serif;
+      display: inline-block;
+      margin-right: 430px;
+      margin-top: 100px;
+      font-size: 30px;
+      color: #000000;
+      background: #9DFF20;
+      border-radius: 50px;
+      border: 0; }
+  .main__pelis .parte2 {
+    grid-area: parte2; }
+    .main__pelis .parte2 img {
+      width: 517px;
+      height: 781px;
+      margin-top: 100px; }
+    .main__pelis .parte2 table {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 27px;
+      text-align: left;
+      color: #FFFFFF;
+      margin-top: 50px;
+      margin-left: 245px;
+      text-align: center; }
