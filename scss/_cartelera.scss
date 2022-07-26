@@ -4,11 +4,20 @@ body {
 main{
     .cartelera__titulo{
         font-family: 'Roboto', sans-serif;
-        margin: 5vw;
+        font-family: 'Roboto', sans-serif;
+        margin: 50px;
         color: #FFFFFF;
-        font-size: 2em;
+        margin-right: 30px;
+        color: #FFFFFF;
+        font-size: 50px;
         max-width: none;
         text-align: left;
+        @media screen and (max-width: 768px){
+            font-size: 30px;
+        }            
+        @media screen and (max-width: 375px){
+            font-size: 20px;
+        }
     }
     .cartelera__peliculas{
     
@@ -18,6 +27,10 @@ main{
         align-items: center;
         margin-left: 100px;
         text-align: center;
+        @media screen and (max-width: 375px){
+        margin-left: 15px;
+        }
+
     
     }
     
@@ -27,5 +40,13 @@ main{
         margin: 10px 70px;
         height: auto;
         width: 280px;
+        @media screen and (max-width: 768px){
+            width: 250px;
+            margin: 10px 30px;
+        }
+        @media screen and (max-width: 375px){
+            width: 130px;
+            margin: 10px;
+        }
     }
 }  

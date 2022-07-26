@@ -50,6 +50,14 @@ body{
             color: #FFFFFF;
             font-size: 50px;
             margin-right: 30px;
+            @media screen and (max-width: 768px){
+                font-size: 30px;
+            }            
+            @media screen and (max-width: 375px){
+                font-size: 20px;
+            }
+                
+            }
 
         }
         .main__peliculas{
@@ -72,22 +80,39 @@ body{
             margin: 10px 70px;
             height: auto;
             width: 300px;
-
+            @media screen and (max-width: 768px){
+                width: 150px;
+                margin: 10px 80px;
+            }
+            @media screen and (max-width: 375px){
+                width: 130px;
+                margin: 16px;
+            }
+                
+            }
+                    
+                
+            }
             :hover{
                 transform: translate(10px,10px);
               }}
            
         
               figcaption {
-                color: black;
+                color: #272727;
                 font-size: 20px;
                 font-weight:  bold;
                 padding: 3px;
                 text-align: center;
+                @media screen and (max-width: 375px){
+                    font-size: 13px;
                 }
-
+                    
+                
+                }
+            
           
-        } }}
+        
 
     
 
@@ -95,14 +120,18 @@ body{
 
     
     .footer{
-        background-color: #000814;
+        
         display: inline-block;
-        width: 100%;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 0px;
+
+        .logo__footer img{
+        width: 100%;
+        height: auto;}
 
     .redes{
         display: flex;
@@ -123,7 +152,17 @@ body{
 
 
     
-//     @media screen and (max-width: 768px){
+    // @media screen and (max-width: 768px){
+    //     // main{
+    //     // .main__titulo{
+    //         font-size: 15px;
+    //     }
+    //     .main__peliculas{
+    //         img{
+    //             width: 200px;
+    //         }
+    //     }
+ 
 
 
 

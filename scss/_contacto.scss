@@ -1,0 +1,135 @@
+.main__contactos{
+    margin-bottom: 500px;
+.contactanos__h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    @media screen and (max-width: 768px){
+        font-size: 30px;
+        text-align: center;
+        line-height: 30px;
+    }    
+}
+form
+ {
+  display: grid; 
+  grid-auto-columns: auto; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: auto auto; 
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: 
+    "label1 input1"
+    "label2 input2"
+    "label3 input3"
+    "label4 input4"
+    "boton boton";  
+    @media screen and (max-width: 768px){
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    } 
+        
+    }
+
+.label1 { grid-area: label1; }
+.input1 { grid-area: input1; }
+.label2 { grid-area: label2; }
+.label3 { grid-area: label3; }
+.label4 { grid-area: label4; }
+.input2 { grid-area: input2; }
+.input3 { grid-area: input3; }
+.input4 { grid-area: input4; }
+.boton{ grid-area: boton; }
+
+
+.input1, .input2, .input3, .input4, .label1, .label2, .label3, .label4, .boton{
+    height: 100px;
+    @media screen and (max-width: 768px){
+        height: 50px;
+     } 
+}
+/* }
+form input, form textarea{
+    display: block;    
+    }  */
+/* input, textarea{
+    text-align: center;
+
+} */
+
+label{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    font-size: 30px;
+    color: #FFFFFF; 
+    margin-left: 300px;
+    @media screen and (max-width: 768px){
+        margin-left: 0px;
+        margin-right: 0px;
+     } 
+     @media screen and (max-width: 375px){
+        font-size: 20px;
+    }
+}
+input{
+    width: 612px;
+    height: 50px;
+    margin-right: 600px;
+    @media screen and (max-width: 768px){
+        margin-left: 0px;
+        margin-right: 0px;
+     } 
+     @media screen and (max-width: 375px){
+        width: 350px;
+        margin-bottom: 35px;
+    }
+}
+
+textarea{
+    width: 600px;
+    height: 300px;
+    font-size: 16px;
+    line-height: 250px ;
+    margin-right: 600px;
+    @media screen and (max-width: 768px){
+        margin-left: 0px;
+        margin-right: 0px;
+     } 
+     @media screen and (max-width: 375px){
+        width: 350px;
+    }
+}
+
+
+button{
+    
+    width: 240px;
+    height: 52px;    
+    
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    margin-left:350px;
+    margin-top: 220px;
+    font-size: 30px;
+    color: #000000;
+    background: #9DFF20;
+    border-radius: 50px;
+    border: 0;
+    @media screen and (max-width: 768px){
+        margin-left:350px;
+        margin-top: 320px;
+     }
+     @media screen and (max-width: 375px){
+        margin-left:200px;
+        margin-top: 320px;
+        width: 140px;
+        height: 52px;
+        font-size: 25px;   
+    } 
+
+}
+}

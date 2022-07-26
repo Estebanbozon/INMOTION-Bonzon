@@ -269,7 +269,13 @@ form
     "label3 input3"
     "label4 input4"
     "boton boton";  
+    @media screen and (max-width: 768px){
+        width: 50%;
+    } 
 }
+@media screen and (max-width: 768px){
+   form{ width: 150%;
+}} 
 .label1 { grid-area: label1; }
 .input1 { grid-area: input1; }
 .label2 { grid-area: label2; }
