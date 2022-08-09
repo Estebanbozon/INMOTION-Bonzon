@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(180deg, #000814 0%, rgba(0, 8, 20, 0) 100%);
     text-align: center; }
+    
+
 
 .main__pelis{
     display: grid; 
@@ -12,7 +14,24 @@ body {
     grid-template-areas: 
       "parte1 parte2"
       "parte1 parte2"; 
-  
+      
+      @media screen and (max-width: 768px){
+
+        display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr ; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "parte1 "
+      "parte2"; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
   .parte1 { grid-area: parte1;
     h1{
         font-family: 'Roboto';
@@ -25,6 +44,13 @@ body {
         margin-top: 100px;
         margin-bottom: 130px;
         margin-left:120px ;
+
+
+        @media screen and (max-width: 768px){
+            font-size: 30px;
+            margin-left: 0px;
+            margin-bottom: 65px;
+        } 
     }
     p{
         font-family: 'Puritan', sans-serif;
@@ -35,6 +61,25 @@ body {
         text-align: left;
 
         margin-left: 145px;
+
+
+        @media screen and (max-width: 768px){
+            font-size: 20px;
+            margin-left:100px;
+            margin-right:100px;
+            font-weight: 300;
+           padding: 40px;
+            text-align: justify;
+
+        } 
+        @media screen and (max-width: 375px){
+            font-size: 16px;
+            margin:0px;
+
+            margin-left: 1px;
+            text-align: justify;
+
+        } 
     }
     button{
 
@@ -50,12 +95,31 @@ body {
         background: #9DFF20;
         border-radius: 50px;
         border: 0;
+
+
+        @media screen and (max-width: 768px){
+            margin: 50px;
+            width: 140px;
+            font-size: 20px;
+            border: 10px;
+            font-weight: 900;
+        } 
     } }
   .parte2 { grid-area: parte2;
+
     img{
         width: 517px;
         height: 781px;
         margin-top: 100px;
+
+
+
+
+       @media screen and (max-width: 768px){
+            width: 250px;
+            height: 400px; 
+
+        } 
     }
     table{
         font-family: 'Roboto', sans-serif;
@@ -67,10 +131,13 @@ body {
         color: #FFFFFF;
         margin-top: 50px;
         margin-left: 245px;
-        text-align: center;
-    }
-    
-}
+        text-align: justify;
+        margin-bottom: 35px;
+        @media screen and (max-width: 768px){
+            margin-left: 1px;}
+            font-size: 16px;
+            margin-bottom: 135px;
+            padding: 100px;
+    }}}
 
 
-}
